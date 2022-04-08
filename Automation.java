@@ -28,22 +28,23 @@ public class Automation  extends MultipleLangauge {
 		automationObj.python();
 		automationObj.ruby();
 		
-}
+		}
 
-	@Override
-	public void Java() {
+		@Override
+		public void Java() {
 		System.out.println("this is a method from Language Interface");
 		
-	}
+		}
 
-	@Override
-	public void Selenium() {
+		@Override
+		public void Selenium() {
 		System.out.println("This is a method from TestTools Interface");
 		
-	}
+		}
 
-	@Override
-	public void ruby() {
+		@Override
+		public void ruby() {
 		System.out.println("Unimplemnted method in Multiple languages class");
 		
-	}}
+		}
+}

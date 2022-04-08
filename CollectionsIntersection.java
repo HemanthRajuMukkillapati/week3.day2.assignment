@@ -15,6 +15,7 @@ public class CollectionsIntersection {
 		
 		List <Integer> firstList = new  ArrayList <Integer>();    // declaring lists
 		List <Integer> secondList = new  ArrayList <Integer>();
+		List <Integer> thirdList =new ArrayList <Integer>();
 		
 		for (Integer ele : firstArray) {
 			firstList.add(ele);
@@ -31,21 +32,26 @@ public class CollectionsIntersection {
 		// converted array to list since declaring each element in array causes code redundancy
 		
 	
-		for (int i=0;i<=5;i++) {     // using two for loops to compare two list elements
+		for (int i=0;i<=5;i++) 
+		{     // using two for loops to compare two list elements
 			
 			for(int j=0;j<=5;j++)
 			{
-			if(firstList.get(i)==secondList.get(i) ) {
-				
-				System.out.print("The common elments in both lists are :" + firstList.get(i) + ",");
+			if(firstList.get(i)==secondList.get(i) ) 
+			{
+				thirdList.add(firstList.get(i));
 				break;
 				
+			 }
+			
+			
 			}
 		}
-		
-			
-		}
 
-	}}
+		System.out.println(" The elments common in both lists are in below list: ");
+		System.out.println(" " + thirdList);
+
+   }
+}
 
 

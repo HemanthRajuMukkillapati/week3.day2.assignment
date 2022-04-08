@@ -7,9 +7,10 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class PrintDuplicatesInCollections {
+		public class PrintDuplicatesInCollections {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
+			
 		int[] arr = {14,12,13,11,15,14,18,16,17,19,18,17,20};
 		
 		
@@ -19,10 +20,13 @@ public class PrintDuplicatesInCollections {
 		for (int ele : arr) {
 			listitems.add(ele);
 		}
-//sorting list 		
+		
+		
+		//sorting list		
 		Collections.sort(listitems);
 		
 		int sizeofList=listitems.size();
+		
 		System.out.println(listitems);
 		
 		Set <Integer> avoidDuplicateSet = new TreeSet<Integer> (); 
@@ -30,19 +34,24 @@ public class PrintDuplicatesInCollections {
 		
 		int count; 
 		
-		for (int i=0;i<sizeofList-1;i++)    //outer loop starts from zero to list list size-1
+		//outer loop starts from zero to list list size-1
+		for (int i=0;i<sizeofList-1;i++)    
 		{
-			count=0;
-		for (int j=1;j<sizeofList;j++)     //inner loop starts from 1 to list list size-1
+		    count=0;
+		    
+		  //inner loop starts from 1 to list list size-1
+		for (int j=1;j<sizeofList;j++)     
 		{
-		
-			if(listitems.get(i)==listitems.get(j))   //each element is compared to its immediate next elements 
+			
+			//each element is compared to its immediate next elements
+			if(listitems.get(i)==listitems.get(j))    
 			{
 				count++;
 			}
 				if(count>1) 
 				{
-					avoidDuplicateSet.add(listitems.get(i));      //duplicate values adding to set
+					//duplicate values adding to set
+					avoidDuplicateSet.add(listitems.get(i));      
 					
 					
 				}	
@@ -51,9 +60,11 @@ public class PrintDuplicatesInCollections {
 		
 		}
 						
-		
-		System.out.println("The duplicate items are: "+ avoidDuplicateSet );   //printing duplicate values
-	}}
+			//printing duplicate values
+			System.out.println("The duplicate items are: "+ avoidDuplicateSet );   
+			
+	}
+}
 
 
 	

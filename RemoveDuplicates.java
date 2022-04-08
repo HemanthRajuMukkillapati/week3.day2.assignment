@@ -5,59 +5,40 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 
-public class RemoveDuplicates {
+	public class RemoveDuplicates {
 
-	
-	
-		
-		/*
-		 * Pseudo code 
-		 
-		 * a) Use the declared String text as input
-			String text = "We learn java basics as part of java sessions in java week1";		
-		 * b) Initialize an integer variable as count	  
-		 * c) Split the String into array and iterate over it 
-		 * d) Initialize another loop to check whether the word is there in the array
-		 * e) if it is available then increase and count by 1. 
-		 * f) if the count > 1 then replace the word as "" 
-		 
-		 * g) Displaying the String without duplicate words	
-		 */
-
-
-
-	
-	
-	
-	
 	public static void main(String[] args) {
+	
+	//Declaring a string	
+	String text = "We learn java basics as part of java sessions in java week1";
+	
+	//Splitting string based on space
+	String[] text1 = text.split(" ");
+	
+	// Declaring a Set: LinkedHashSet, becacuse its in order and removes duplicates
+	Set <String> removeDuplicates = new LinkedHashSet<String>();
 		
-		String text = "We learn java basics as part of java sessions in java week1";
-		
-		String[] text1 = text.split(" ");
-		
-		Set <String> removeDuplicates = new LinkedHashSet<String>();
-		
-		
-		for (String str : text1) {
+	// adding string to list
+	for (String str : text1) 
+	{
 			
 			removeDuplicates.add(str);
+	}
+	
+	// converting an set to string
+	String string1 = removeDuplicates.toString();
+	
+	//splitting by comma, bcz in list we have commas by default
+	String[] split = string1.split(",");
+	
+	//print each string together to form the orginal sentence without java
+	for (String string : split) 
+	{
 			
-			
-		}
+	System.out.print(string);
+	
+	}
 		
-		String string1 = removeDuplicates.toString();
-		String[] split = string1.split(",");
-		for (String string : split) {
-			
-			System.out.print(string);
-		}
-		
-		
-		
-		
-		
-
 	}
 
 }

@@ -4,21 +4,29 @@ public class Palindrome {
 	
 	public static void main(String[] args) {
 		
-		String pali="madam";
+		
+		// declaring an string to check Palindrome or not and an empty string to print reverse
+		String stringtoverify="madam";
+		
 		String rev="";
 		
-	
 		
-		for (int iterator=pali.length()-1; iterator>=0;iterator--) {
+		for (int iterator=stringtoverify.length()-1; iterator>=0;iterator--) {
 			
-			rev=rev+pali.charAt(iterator);
+			rev=rev+stringtoverify.charAt(iterator);
 		}
+		
+		//Printing reverse of string
 		System.out.println(rev);
-		if(rev.equals(pali)) {
+		
+		//verifying reverse of string is equal to actual string or not
+		if(rev.equals(stringtoverify)) 
+		{
 			System.out.println("Given String is a Pallindrome");
 		}
 		
-		else {
+		else 
+		{
 			System.out.println("Given String is not a Pallindrome");
 		}
 		

@@ -15,7 +15,8 @@ public class FindSecondLargest {
 		Set <Integer> treeSet = new  TreeSet <Integer>(); 
 		
 		
-		for (Integer integer : array) {
+		for (Integer integer : array) 
+		{
 			treeSet.add(integer);
 		}
 		
@@ -29,20 +30,11 @@ public class FindSecondLargest {
 		//since we cant retirve value from TreeSet converting back to array
 		
 		int Secondlargest=(int) array2[array2.length-2];
-		//type casting object type to Int 
+		//type casting object type to int 
 		
 
 		
 		System.out.println("the second largest number in the list is:  " + Secondlargest);
-		
-		
-
-		
-		/*
-		 Pseudo Code:
-		 1) Arrange the array in ascending order
-		 2) Pick the 2nd element from the last and print it
-		 */
 		
 
 		
