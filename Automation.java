@@ -5,11 +5,11 @@ public class Automation  extends MultipleLangauge {
 // Automation implements both interfaces since MultipleLangauge class is an abstract class
 // we can implement interfaces here because of multilevel Inheritance-->Automation-->MultipleLangauge implements both Interfaces
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		
-		Language languageObject = new Automation();
+		Language langObj = new Automation();
 		
-		languageObject.Java();
+		langObj.Java();
 		
 		// here we are referring the language interface for accessing only Language specific methods
 		

@@ -1,8 +1,7 @@
 package week3.day2.assignment;
 
 import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -12,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AjioBagsMen {
 
-	public static void main(String[] args) throws InterruptedException {
+		public static void main(String[] args) throws InterruptedException {
 		
 		WebDriverManager.chromedriver().setup();
 		

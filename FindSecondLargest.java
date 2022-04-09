@@ -7,25 +7,25 @@ import java.util.TreeSet;
 
 public class FindSecondLargest {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 
 		// Here is the input
 		int[] array = {3,2,11,4,6,7};
 		
-		Set <Integer> treeSet = new  TreeSet <Integer>(); 
+		Set <Integer> tSet = new  TreeSet <Integer>(); 
 		
 		
 		for (Integer integer : array) 
 		{
-			treeSet.add(integer);
+			tSet.add(integer);
 		}
 		
 		//converting into treeset makes array in order as TreeSet follows asiic order
 		
 		
-		System.out.println(treeSet);
+		System.out.println(tSet);
 		
-		Object[] array2 = treeSet.toArray();
+		Object[] array2 = tSet.toArray();
 		
 		//since we cant retirve value from TreeSet converting back to array
 		

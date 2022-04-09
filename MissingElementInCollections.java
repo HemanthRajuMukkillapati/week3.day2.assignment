@@ -6,23 +6,20 @@ import java.util.Collections;
 
 import java.util.List;
 
-	public class MissingElementInCollections {
+public class MissingElementInCollections {
 
 	public static void main(String[] args) {
 	
 	// declaring array
 	int[] arr = {1,2,3,4,7,6,8};
 	
-	//declaring list
+	    //declaring list
 	List <Integer> sortList = new ArrayList <Integer>();
 	
+	   
 	//adding array to list
-	for (Integer ele : arr) 
-	{
-	
+	for (Integer ele : arr) {
 	sortList.add(ele);
-			
-			
 	}
 	
 	

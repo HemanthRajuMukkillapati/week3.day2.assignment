@@ -6,21 +6,21 @@ public class Palindrome {
 		
 		
 		// declaring an string to check Palindrome or not and an empty string to print reverse
-		String stringtoverify="madam";
+		String strToVer="madam";
 		
 		String rev="";
 		
 		
-		for (int iterator=stringtoverify.length()-1; iterator>=0;iterator--) {
+		for (int iterator=strToVer.length()-1; iterator>=0;iterator--) {
 			
-			rev=rev+stringtoverify.charAt(iterator);
+			rev=rev+strToVer.charAt(iterator);
 		}
 		
 		//Printing reverse of string
 		System.out.println(rev);
 		
 		//verifying reverse of string is equal to actual string or not
-		if(rev.equals(stringtoverify)) 
+		if(rev.equals(strToVer)) 
 		{
 			System.out.println("Given String is a Pallindrome");
 		}
